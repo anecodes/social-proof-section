@@ -3,39 +3,81 @@
 }
 
 body {
-  max-width: 1200px;
-  max-height: 1200px;
+  max-width: 1150px;
+  max-height: 1150px;
   width: 100%;
   margin: 0 auto;
   font-family: "Spartan", sans-serif;
+  font-size: 12px;
   background: url("../images/bg-pattern-top-mobile.svg") no-repeat top left,
     url("../images/bg-pattern-bottom-mobile.svg") no-repeat bottom right;
 }
 
-h1 {
-  color: hsl(300, 43%, 22%);
-  font-size: 40px;
-}
-
-.description {
+.desktop {
   left: 0px;
   width: 400px;
   padding: 10px;
 }
 
-.desc {
+#description p {
   color: hsl(303, 10%, 53%);
   font-size: 15px;
   font-weight: 500;
-  
 }
 
-.stars {
+#description h1 {
+  color: hsl(300, 43%, 22%);
+  font-size: 40px;
+}
+
+.stars1 {
   position: absolute;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  left: 210px;
   width: 300px;
   padding: 10px;
+  margin: 15px 60px;
+}
+
+.stars2 {
+  position: absolute;
+  top: 90px;
+  left: 250px;
+  width: 300px;
+  padding: 10px;
+  margin: 15px 60px;
+}
+
+.stars3 {
+  position: absolute;
+  top: 160px;
+  left: 290px;
+  width: 300px;
+  padding: 10px;
+  margin: 15px 60px;
+}
+
+.stars-container {
+  margin-left: 500px;
+  width: 400px;
+  height: 50px;
+  background: #f7f2f7;
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  position: relative;
+  border-radius: 6px;
+}
+
+.stars-container h3 {
+  padding-left: 150px;
+  padding-top: 20px;
+}
+
+#imgstar {
+  left: 20px;
+  top: 18px;
+  margin: 0 10px 0 10px;
+  position: absolute;
 }
 
 .buyers-section {
@@ -45,24 +87,217 @@ h1 {
   display: table;
   clear: both;
   width: 90%;
+  margin-top: 50px;
+}
+
+.buyers-section .about {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.buyers-section img {
+  border-radius: 60px;
+  width: 50px;
+  height: 50px;
+  margin-right: 25px;
+}
+
+.buyers-section h3 {
+  color: #ffffff;
+  font-weight: 600;
+  margin: 6px;
+}
+
+.buyers-section .verifiedbuyer {
+  font-weight: 300;
+  color: hsl(303, 10%, 53%);
+}
+
+.buyers-section .feedback {
+  color: #ffffff;
+  padding-top: 10px;
+  font-weight: 500;
 }
 
 .buyers {
   float: left;
-  width: 33.33%;
-  padding: 10px;
+  width: 29%;
+  height: 180px;
+  padding: 20px;
+  border-radius: 6px;
+  background: #502050;
+  margin-right: 36px;
 }
 
-.footer {
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
-  transform: translate(-50%, 0);
-  text-decoration: none;
+.table2 {
+  margin-top: 15px;
 }
 
-@media only screen and (max-width: 375px) {
+.table3 {
+  margin-top: 30px;
+}
+
+@media (max-width: 420px) {
   body {
-    width: 100%;
+    width: auto;
+    background: url("../images/bg-pattern-top-desktop.svg") no-repeat top left,
+      url("../images/bg-pattern-bottom-desktop.svg") no-repeat bottom right;
+  }
+
+  #description {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    float: center;
+  }
+
+  #description .desc1 {
+    margin: 8px auto;
+    width: auto;
+    height: 30px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    float: center;
+  }
+
+  .stars1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: auto;
+    margin: auto;
+    align-items: center;
+  }
+
+  .stars2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stars3 {
+    position: absolute;
+    top: auto;
+
+    width: auto;
+
+    display: flex;
+
+    margin-right: 30px;
+  }
+
+  .stars-container {
+    width: 340px;
+
+    margin-right: 30px;
+  }
+
+  .stars-container h3 {
+    left: 50%;
+    top: 50%;
+    margin-left: -130px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .buyers-section {
+    position: relative;
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .buyers {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .buyers-section .verifiedbuyer {
+    font-weight: 300;
+    color: hsl(333, 80%, 67%);
+  }
+
+  #imgstar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 130px;
+    padding-right: 10px;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  #description {
+    margin: 10px auto 10px auto;
+    text-align: center;
+    float: center;
+  }
+
+  #description .desc1 {
+    margin: 8px auto;
+    width: auto;
+    height: 30px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    float: center;
+  }
+
+  .stars1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    margin: 0;
+    margin-top: 30px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stars2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: auto;
+    margin: 0;
+    margin-top: 5px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stars3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: auto;
+    margin: 0;
+    margin-top: 5px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stars-container {
+    flex-basis: 30%;
+  }
+
+  .buyers-section {
+    column-width: 20px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buyers {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 }
