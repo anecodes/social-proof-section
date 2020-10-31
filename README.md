@@ -7,4 +7,5 @@ A [challenge](https://www.frontendmentor.io/challenges/social-proof-section-6e0q
 # Technologies:
 * HTML5
 * CSS3
-* Bootstrap
+
+Social Proof Section Challenge created by [Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA) and developed by [Juliane Pires](https://github.com/anecodes).
